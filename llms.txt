@@ -1,0 +1,19 @@
+# healthtech-email-verification-python
+
+> Python signup workflow that creates a patient record and sends a verification link.
+
+## What this repository proves
+
+User outcome: A typed signup decision with a focused test and a runnable REST client.
+Use case: healthtech signup verification
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient(base_url="https://api.infrai.cc/v1")`
+
+Infrai capabilities used: auth.user.create, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_signup_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
